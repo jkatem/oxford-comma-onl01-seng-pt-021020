@@ -16,6 +16,7 @@
   #   array.join(", ")
   # end
 
+<<<<<<< HEAD
 #   def oxford_comma(arr)
 #     #expect(oxford_comma(["kiwi"])).to eq("kiwi")
 #     i = 0
@@ -51,3 +52,21 @@
     arr.join(", ") + ", and " + x
   end
 end
+=======
+  def oxford_comma(arr)
+    #expect(oxford_comma(["kiwi"])).to eq("kiwi")
+    i = 0
+    if arr.size == 1
+      return arr[i]
+    end
+
+#expect(oxford_comma(["kiwi", "durian"])).to eq("kiwi and durian")
+    if arr.size == 2
+      return arr[0] + " and " + arr[1]
+    end
+
+    if arr.size == 3
+      return arr[0] + " , " + arr[1] + " and " + arr[2]
+    end
+  end
+>>>>>>> 44d2c647e2bb7dfffe28cff9519e43db0c2ee16e
